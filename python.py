@@ -142,6 +142,63 @@ for i in range(1,6):
     print()
 '''
 
+'''
+a="Happy Birthday"
+print(a[0]+a[-5:-7:-1])  "Htr"
+print(a[-4:-7:-1])  "htr"
+'''
+'''
+def convert(s):
+    out=''
+    for i in s:
+        if 'a'<='z':
+            out+=chr(ord(i)-32)
+        else:
+            out+=i
+    return out
+print(convert(input("enter a string: ")))
+'''
+
+'''
+class college:
+    cname = "GPLN"
+    cloc = "Hoodi"
+s1= college()
+print(s1.cname,s1.cloc)
+college.cloc="banglore"
+print(college.cloc)
+print(s1.cloc)
+print("changing loc with respect to object")
+s1.cloc = "mysore"
+print(s1.cloc)
+print(college.cloc)
+'''
+'''
+class college:
+    def __init__(self,name,phone,usn):
+        self.name = name
+        self.phone = phone
+        self.usn = usn
+
+    def display(self):
+        print(self.name,self.phone,self.usn)
+
+    def change_name(self,new):
+        self.name = new
+
+
+s1 = college('Harish ','132447 ','sdf5gh ')
+s2 = college('girsh ','0380334 ','wer45ty ')
+s1.display()
+s2.display()
+
+s1.change_name('harry')
+s1.display()
+
+s2.change_name('garry')
+s2.display()
+
+'''
 
 
 
